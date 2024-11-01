@@ -1,30 +1,6 @@
 body {
 background: black;
-background: linear-gradient(335deg, black 0%, rgb(0, 0, 66) 45%);
+background: linear-gradient(335deg, black 0%, rgb(0, 0, 59) 45%);
 background-repeat: no-repeat;
-min-height: 1000px;
-
-}
-
-h1 {
-    color: white;
-    text-align: center;
-
-}
-
-h2 {
-    color:white;
-
-}
-
-.big-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.direct-to-button {
-    border: 5px solid white;
-    border-radius: 10px;
-
+min-height: 100vh;
 }
