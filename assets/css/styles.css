@@ -16,7 +16,10 @@ h1, h2 {
 
 p {
     color: #c4c4c4;
+}
 
+input:focus {
+    border-color: #FA824C;
 }
 
 /* Specific styles */
@@ -39,6 +42,10 @@ nav {
 }
 
 #about p {
+    color: #001E2D;
+}
+
+#subscribe * {
     color: #001E2D;
 }
 
