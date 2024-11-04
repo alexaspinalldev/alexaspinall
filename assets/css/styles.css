@@ -2,7 +2,7 @@
 
 body {
 background: black;
-background: linear-gradient(335deg, black 0%, #00002d 65%);
+background: linear-gradient(335deg, black 0%, #001E2D 65%);
 background-repeat: no-repeat;
 color: #F6F7FF;
 font-family: 'Oxanium', sans-serif;
@@ -27,16 +27,20 @@ p {
 #about {
     background-color: #F6F7FF;
     border-radius: 30px;
-    color: #00002d;
+    color: #001E2D;
 
 }
 
 #about p {
-    color: #00002d;
+    color: #001E2D;
 }
 
-#portfolio {
-    
+#portfolio .card-title {
+    color: #33658A;
+}
+
+#portfolio .btn-outline-secondary:hover {
+    background-color: #33658A;
 }
 
 #contact {
