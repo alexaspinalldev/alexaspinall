@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Oxanium:wght@200..800&display=swap');
 
+/* Global styles */
+
 body {
 background: black;
 background: linear-gradient(335deg, black 0%, #001E2D 65%);
@@ -17,6 +19,12 @@ p {
 
 }
 
+/* Specific styles */
+
+nav {
+/* The Bootstrap opactiy is stupid, remove it and target just the background here */
+}
+
 #hero {
     /* background-color: lightgray;
     background: url(../images/background.webp) no-repeat 50% 70% / cover; */
@@ -28,7 +36,6 @@ p {
     background-color: #F6F7FF;
     border-radius: 30px;
     color: #001E2D;
-
 }
 
 #about p {
