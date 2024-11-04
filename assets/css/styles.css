@@ -18,8 +18,8 @@ p {
 }
 
 #hero {
-    background-color: lightgray;
-    background: url(../images/background.webp) no-repeat 50% 70% / cover;
+    /* background-color: lightgray;
+    background: url(../images/background.webp) no-repeat 50% 70% / cover; */
     padding: 5% 7%;
     min-height: 500px;
 }
