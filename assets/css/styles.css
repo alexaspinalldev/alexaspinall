@@ -1,11 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Oxanium:wght@200..800&display=swap');
+
 body {
 background: black;
-background: linear-gradient(335deg, black 0%, rgb(0, 0, 59) 65%);
+background: linear-gradient(335deg, black 0%, #00002d 65%);
 background-repeat: no-repeat;
-color: #FFFFFF;
+color: #F6F7FF;
+font-family: 'Oxanium', sans-serif;
+}
+
+h1, h2 {
+    font-family: "Krona One", sans-serif;
 }
 
 p {
     color: #c4c4c4;
 
+}
+
+#hero {
+    background-color: lightgray;
+    background: url(../images/background.webp) no-repeat 50% 70% / cover;
+    padding: 5% 7%;
+    min-height: 500px;
+}
+
+#about {
+    background-color: #F6F7FF;
+    border-radius: 30px;
+    color: #00002d;
+
+}
+
+#about p {
+    color: #00002d;
+}
+
+#portfolio {
+    
+}
+
+#contact {
+    background-color: #33658A;
+    border-radius: 30px;
 }
