@@ -1,7 +1,11 @@
-/* body {
+body {
 background: black;
-background: linear-gradient(335deg, black 0%, rgb(0, 0, 59) 45%);
+background: linear-gradient(335deg, black 0%, rgb(0, 0, 59) 65%);
 background-repeat: no-repeat;
-min-height: 100vh;
-color: white;
-} */
+color: #FFFFFF;
+}
+
+p {
+    color: #c4c4c4;
+
+}
