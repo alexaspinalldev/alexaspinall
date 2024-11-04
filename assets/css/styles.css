@@ -18,9 +18,11 @@ p {
     color: #c4c4c4;
 }
 
-input:focus {
+/* input[type=text]:focus {
+    outline: none;
     border-color: #FA824C;
-}
+    box-shadow: 0 0 10px #9ecFA824Caed;
+} */
 
 /* Specific styles */
 
