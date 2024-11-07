@@ -28,7 +28,11 @@ p {
 /* Specific styles */
 
 nav {
-/* The Bootstrap opactiy is stupid, remove it and target just the background here */
+    background-color: rgba(43, 48, 53, .8);
+}
+
+nav a {
+
 }
 
 #hero {
