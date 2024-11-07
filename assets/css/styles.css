@@ -64,11 +64,20 @@ nav {
     border-radius: 30px;
 }
 
+footer {
+    display: none;
+}
+
 /* Media queries */
 @media screen and (min-width: 576px) {
     body {
         padding-bottom: 0;
-        padding-top: 57px; /* This is to account for the nav height - remember to change this for all screen sizes */
+        padding-top: 0; /* This is to account for the nav height - remember to change this for all screen sizes */
     }
+
+    footer {
+        display: block;
+    }
+
     
 }
