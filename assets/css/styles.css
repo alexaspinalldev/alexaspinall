@@ -8,6 +8,7 @@ background: linear-gradient(335deg, black 0%, #001E2D 65%);
 background-repeat: no-repeat;
 color: #F6F7FF;
 font-family: 'Oxanium', sans-serif;
+padding-bottom: 57px; /* Accounts for the nav being on the bottom on mobile */
 }
 
 h1, h2 {
@@ -61,4 +62,13 @@ nav {
 #contact {
     background-color: #33658A;
     border-radius: 30px;
+}
+
+/* Media queries */
+@media screen and (min-width: 576px) {
+    body {
+        padding-bottom: 0;
+        padding-top: 57px; /* This is to account for the nav height - remember to change this for all screen sizes */
+    }
+    
 }
