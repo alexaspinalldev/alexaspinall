@@ -72,7 +72,6 @@ footer {
 @media screen and (min-width: 576px) {
     body {
         padding-bottom: 0;
-        padding-top: 0; /* This is to account for the nav height - remember to change this for all screen sizes */
     }
 
     footer {
