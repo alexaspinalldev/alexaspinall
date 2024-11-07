@@ -25,15 +25,20 @@ p {
     box-shadow: 0 0 10px #9ecFA824Caed;
 } */
 
-/* Specific styles */
-
+/* Nav */
 nav {
     background-color: rgba(43, 48, 53, .8);
 }
 
+/* Unfinished work here - not happy with having transparent link text
+.navbar-dark { /* Override bootstrap's transparent text
+    color: gray;
+    
+} */
+
+/* Specific styles */
+
 #hero {
-    /* background-color: lightgray;
-    background: url(../images/background.webp) no-repeat 50% 70% / cover; */
     padding: 1% 3%;
 }
 
