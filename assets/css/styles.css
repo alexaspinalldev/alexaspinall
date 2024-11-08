@@ -16,7 +16,7 @@
 
 body {
 background: black;
-background: linear-gradient(335deg, black 0%, #001E2D 65%);
+background: linear-gradient(335deg, black 0%, #002B40 85%);
 background-repeat: no-repeat;
 color: var(--primary-color);
 font-family: var(--primary-font);
