@@ -58,7 +58,15 @@ nav {
     color: var(--primary-color-dark);
 }
 
+/* Porfolio-hl */
+#portfolio-hl {
+    background: radial-gradient(closest-side, #000000, rgba(0, 0, 0, 0));
+}
 
+
+
+
+/* Porfolio-main */
 #portfolio .card-title {
     color: #33658A;
 }
@@ -67,11 +75,13 @@ nav {
     background-color: #33658A;
 }
 
+/* Contact me styles */
 #contact {
     background-color: #33658A;
     border-radius: 30px;
 }
 
+/* Footer */
 footer {
     display: none;
 }
