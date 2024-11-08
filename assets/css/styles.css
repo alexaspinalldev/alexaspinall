@@ -1,29 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Oxanium:wght@200..800&display=swap');
 
+/* CSS variables */
+:root {
+    --primary-font:  'Oxanium', sans-serif; /* Body */
+    --secondary-font: "Krona One", sans-serif; /* Headings */
+    --primary-color: #F6F7FF;
+    --primary-color-dark: #001E2D;
+    --secondary-color: #c4c4c4; /* Body colour */
+    --highlight-color:
+}
+
+
 /* Global styles */
 
 body {
 background: black;
 background: linear-gradient(335deg, black 0%, #001E2D 65%);
 background-repeat: no-repeat;
-color: #F6F7FF;
-font-family: 'Oxanium', sans-serif;
+color: var(--primary-color);
+font-family: var(--primary-font);
 padding-bottom: 57px; /* Accounts for the nav being on the bottom on mobile */
 }
 
 h1, h2 {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--secondary-font);
 }
 
 p {
-    color: #c4c4c4;
+    color: var(--secondary-color);
 }
-
-/* input[type=text]:focus {
-    outline: none;
-    border-color: #FA824C;
-    box-shadow: 0 0 10px #9ecFA824Caed;
-} */
 
 /* Nav */
 nav {
@@ -43,18 +48,15 @@ nav {
 }
 
 #about {
-    background-color: #F6F7FF;
+    background-color: var(--primary-color);
     border-radius: 30px;
-    color: #001E2D;
+    color: var(--primary-color-dark);
 }
 
 #about p {
-    color: #001E2D;
+    color: var(--primary-color-dark);
 }
 
-#subscribe * {
-    color: #001E2D;
-}
 
 #portfolio .card-title {
     color: #33658A;
