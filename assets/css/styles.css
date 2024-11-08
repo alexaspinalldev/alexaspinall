@@ -4,9 +4,10 @@
 :root {
     --primary-font:  'Oxanium', sans-serif; /* Body */
     --secondary-font: "Krona One", sans-serif; /* Headings */
-    --primary-color: #F6F7FF;
-    --primary-color-dark: #001E2D;
-    --secondary-color: #c4c4c4; /* Body colour */
+    --primary-color: #F6F7FF; /* Headings and white islands */
+    --primary-color-dark: #001E2D; /* Headings */
+    --secondary-color: #c4c4c4; /* P colour */
+    --tertiary-color: #33658A; /* Mid blue islands */
     --highlight-color:
 }
 
