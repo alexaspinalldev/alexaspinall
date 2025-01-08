@@ -1,0 +1,34 @@
+---
+// import Welcome from '../components/Welcome.astro';
+//import Layout from '../layouts/Layout.astro';
+
+const title = "Alex Aspinall - Web Developer"
+const happy = true;
+const finished = false;
+const goal = 3;
+
+---
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quae possimus nesciunt itaque maxime alias nostrum quia. Cum consequatur maxime ex, repellat odio praesentium fugiat eum voluptas perferendis nisi tempore?
+  ">
+  <meta name="generator" content={Astro.generator} >
+  <title>{title}</title>
+</head>
+<body>
+	<main>
+		<h1>Alex Aspinall.</h1>
+		<h2>Web Developer</h2>
+
+		{happy && <p>I am happy to be learning Astro!</p>}
+
+		{finished && <p>I finished this tutorial!</p>}
+
+		{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+
+	</main>
+</body>
