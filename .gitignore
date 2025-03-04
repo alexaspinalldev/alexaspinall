@@ -1,6 +1,5 @@
 # build output
 dist/
-
 # generated types
 .astro/
 
@@ -13,12 +12,30 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+
 # environment variables
 .env
+env.py
 .env.production
+.venv
 
 # macOS-specific files
-.DS_Store
+DS_Store/
 
 # jetbrains setting folder
 .idea/
+
+core.Microsoft*
+core.mongo*
+core.python*
+config.js
+__pycache__/
+*.py[cod]
+.github/
+cloudinary_python.txt
+
+# Stop changing my VSC theme please
+vscode/
+
+# Just update the ReadMe in Github, it's so much easier
+README.md
