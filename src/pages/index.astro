@@ -1,25 +1,52 @@
 ---
-import Base from '../layouts/Base.astro';
-
+import Base from "../layouts/Base.astro";
 ---
 
 <Base title="Home">
-	<main>
-		<h1>Alex Aspinall.</h1>
-		<h2>Web Developer</h2>
-		<div id="skillCarousel">
-			<i>A</i>
-			<i>l</i>
-			<i>e</i>
-			<i>x</i>
-			<i>A</i>
-			<i>s</i>
-			<i>p</i>
-			<i>i</i>
-			<i>n</i>
-			<i>a</i>
-			<i>l</i>
-			<i>l</i>
+  <main>
+    <header class="bg-white text-black h-dvh flex flex-col items-center flex-wrap justify-center">
+    	<div class="w-fit mt-96">
+			<h1>Alex Aspinall.</h1>
+			<h2>Full-stack Web Developer</h2>
 		</div>
-	</main>
-</Base>
+      <div id="skillCarousel" class="flex justify-evenly gap-3 w-screen mt-auto mb-10">
+        <i>A</i>
+        <i>l</i>
+        <i>e</i>
+        <i>x</i>
+        <i>A</i>
+        <i>s</i>
+        <i>p</i>
+        <i>i</i>
+        <i>n</i>
+        <i>a</i>
+        <i>l</i>
+        <i>l</i>
+      </div>
+    </header>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Alex. I'm a web developer based in London. I have experience
+        with HTML, CSS, and JavaScript, and I'm currently learning React.
+      </p>
+    </section>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Project 1</h3>
+          <p>Project 1 description</p>
+        </li>
+        <li>
+          <h3>Project 2</h3>
+          <p>Project 2 description</p>
+        </li>
+        <li>
+          <h3>Project 3</h3>
+          <p>Project 3 description</p>
+        </li>
+      </ul>
+    </section>
+  </main></Base
+>
