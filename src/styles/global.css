@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
-/* Wtf are the below */
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
+@font-face {
+    font-family: "Eurostile";
+    src: url("/fonts/EurostileExtendedBlack.ttf") format("truetype");
+    font-weight: 900;
+    font-style: extended;
+}
 
+@theme {
+  --font-eurostile: Eurostile, monospace;
+}
 
 body {
     background-color: #FFFFFF;
