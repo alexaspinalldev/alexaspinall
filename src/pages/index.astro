@@ -1,56 +1,55 @@
 ---
-import Base from '../layouts/Base.astro'
+import Base from "../layouts/Base.astro";
+import SocialLinks from "../components/sociallinks.astro";
+import SkillBanner from "../components/skillBanner.astro";
 ---
 
 <Base title="Home">
-  <main>
-    <header
-      class="bg-white text-black h-dvh flex flex-col items-center flex-wrap justify-center">
-      <div class="w-fit mt-96">
-        <h1 class="text-9xl font-sans">Alex Aspinall.</h1>
-        <h2 class="font-eurostile"><span class="underline decoration-blue-500">Full-stack</span> <span class="underline decoration-amber-600">Web Developer</span></h2>
-      </div>
-      <div
-        id="skillCarousel"
-        class="flex justify-evenly gap-3 w-screen mt-auto mb-10"
-      >
-        <i>A</i>
-        <i>l</i>
-        <i>e</i>
-        <i>x</i>
-        <i>A</i>
-        <i>s</i>
-        <i>p</i>
-        <i>i</i>
-        <i>n</i>
-        <i>a</i>
-        <i>l</i>
-        <i>l</i>
-      </div>
-    </header>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm Alex. I'm a web developer based in London. I have experience
-        with HTML, CSS, and JavaScript, and I'm currently learning React.
-      </p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <h3>Project 1</h3>
-          <p>Project 1 description</p>
-        </li>
-        <li>
-          <h3>Project 2</h3>
-          <p>Project 2 description</p>
-        </li>
-        <li>
-          <h3>Project 3</h3>
-          <p>Project 3 description</p>
-        </li>
-      </ul>
-    </section>
-  </main></Base
+	<header class="flex flex-col h-dvh">
+		<SocialLinks />
+		<div
+			class="bg-white text-black mb-[4rem] flex flex-col items-center flex-wrap justify-center grow shadow-md"
+		>
+			<div class="w-fit mt-96">
+				<h1 class="font-sans text-9xl">Alex Aspinall.</h1>
+				<h2
+					class="font-bold uppercase font-eurostile font-stretch-expanded"
+				>
+					<span class="underline decoration-blue-500">Full-stack</span
+					>
+					<span class="underline decoration-amber-600"
+						>Web Developer</span
+					>
+				</h2>
+			</div>
+			<SkillBanner />
+		</div>
+	</header>
+	<main>
+		<section>
+			<h2>About Me</h2>
+			<p>
+				Hi, I'm Alex. I'm a web developer based in London. I have
+				experience with HTML, CSS, and JavaScript, and I'm currently
+				learning React.
+			</p>
+		</section>
+		<section>
+			<h2>Projects</h2>
+			<ul>
+				<li>
+					<h3>Project 1</h3>
+					<p>Project 1 description</p>
+				</li>
+				<li>
+					<h3>Project 2</h3>
+					<p>Project 2 description</p>
+				</li>
+				<li>
+					<h3>Project 3</h3>
+					<p>Project 3 description</p>
+				</li>
+			</ul>
+		</section>
+	</main></Base
 >
