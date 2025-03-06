@@ -1,25 +1,20 @@
 ---
-import Base from "../layouts/Base.astro";
-import SocialLinks from "../components/sociallinks.astro";
-import SkillBanner from "../components/skillBanner.astro";
+import Base from '../layouts/Base.astro'
+import SocialLinks from '../components/sociallinks.astro'
+import SkillBanner from '../components/skillBanner.astro'
 ---
 
 <Base title="Home">
 	<header class="flex flex-col h-dvh">
 		<SocialLinks />
 		<div
-			class="bg-white text-black mb-[4rem] flex flex-col items-center flex-wrap justify-center grow shadow-md"
+			class="mb-[4rem] flex grow flex-col flex-wrap items-center justify-center bg-white text-black shadow-md"
 		>
-			<div class="w-fit mt-96">
+			<div class="mt-96 w-fit">
 				<h1 class="font-sans text-9xl">Alex Aspinall.</h1>
-				<h2
-					class="font-bold uppercase font-eurostile font-stretch-expanded"
-				>
-					<span class="underline decoration-blue-500">Full-stack</span
-					>
-					<span class="underline decoration-amber-600"
-						>Web Developer</span
-					>
+				<h2 class="font-bold uppercase font-eurostile font-stretch-expanded">
+					<span class="underline decoration-blue-500">Full-stack</span>
+					<span class="underline decoration-amber-600">Web Developer</span>
 				</h2>
 			</div>
 			<SkillBanner />
@@ -29,9 +24,8 @@ import SkillBanner from "../components/skillBanner.astro";
 		<section>
 			<h2>About Me</h2>
 			<p>
-				Hi, I'm Alex. I'm a web developer based in London. I have
-				experience with HTML, CSS, and JavaScript, and I'm currently
-				learning React.
+				Hi, I'm Alex. I'm a web developer based in London. I have experience with HTML, CSS, and
+				JavaScript, and I'm currently learning React.
 			</p>
 		</section>
 		<section>
