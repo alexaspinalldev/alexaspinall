@@ -1,10 +1,31 @@
 ---
 import Button from '../components/button.astro'
+// Props: href, onClick, variant, label, svg
+
+// import LinkedIn from '../assets/icons/linkedin.astro'
 ---
 
-<div class="flex h-[4rem] justify-end gap-4">
-	<Button />
-	<Button />
-	<Button />
-	<Button />
+<div class="flex h-[5.5rem] justify-end items-center gap-3 mr-4">
+	<Button
+		id="linkedinLink"
+		href="https://www.linkedin.com/in/alexaspinalldev/"
+		variant="btnblue"
+		label="LinkedIn"
+		svg="LinkedIn"
+	/>
+	<Button
+		id="githubLink"
+		href="https://github.com/alexaspinalldev/"
+		variant="btnblack"
+		label="Github"
+		svg="Github"
+	/>
+	<Button id="contactMeLink" href="" variant="btnorange" label="Contact me" svg="Mail" />
+	<Button
+		id="fitnessCoachingLink"
+		href="/fitness/"
+		variant="btnred"
+		label="Fitness coaching"
+		svg="Weight"
+	/>
 </div>
