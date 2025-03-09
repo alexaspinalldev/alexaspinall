@@ -26,9 +26,9 @@
 }
 
 .skillCont {
-	@apply grayscale hover:grayscale-0 grow p-3 flex items-center justify-center;
+	@apply w-min;
 }
 
 .skillCont svg {
-	@apply h-full;
+	@apply h-full drop-shadow-md grayscale transition duration-500  hover:grayscale-0 hover:scale-110 hover:drop-shadow-xl;
 }
