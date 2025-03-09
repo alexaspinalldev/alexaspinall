@@ -40,7 +40,7 @@ body {
 }
 
 .skillCont {
-	@apply w-min;
+	@apply w-min h-[5vw] min-h-24 flex items-center justify-center;
 }
 
 .skillCont svg {
