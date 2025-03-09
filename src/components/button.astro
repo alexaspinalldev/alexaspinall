@@ -4,9 +4,9 @@ const { href, onClick, variant, label, svg } = Astro.props
 
 // Tailwind Styles
 const baseStyles =
-	'rounded-full transition-[width] flex items-center justify-evenly overflow-hidden shadow-md w-[3.5rem] hover:w-[10rem] group'
-const labelStyles = 'text-lg text-nowrap'
-const iconStyles = 'size-[1.5rem] m-4'
+	'p-4 rounded-full transition-[width] flex items-center justify-evenly overflow-hidden shadow-md w-fit group'
+const labelStyles = 'text-lg text-nowrap ml-4 hidden group-hover:block'
+const iconStyles = 'size-[1.5rem]'
 const variants: { [key: string]: string } = {
 	btnblue: 'bg-gradient-to-tl from-blue-500 to-blue-400 text-white fill-white',
 	btnorange: 'bg-gradient-to-tl from-amber-600 to-amber-500 text-white fill-white',

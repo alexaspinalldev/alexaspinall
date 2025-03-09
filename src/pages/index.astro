@@ -8,13 +8,17 @@ import SkillBanner from '../components/skillBanner.astro'
 	<header class="flex flex-col h-dvh">
 		<SocialLinks />
 		<div
-			class="mb-[4rem] flex grow flex-col flex-wrap items-center justify-center bg-white text-black shadow-md"
+			class="mb-[4rem] flex grow flex-wrap items-center justify-center bg-white text-black shadow-md"
 		>
-			<div class="mt-96 w-fit">
-				<h1 class="font-sans text-9xl">Alex Aspinall.</h1>
-				<h2 class="font-bold uppercase font-eurostile font-stretch-expanded">
-					<span class="underline decoration-blue-500">Full-stack</span>
-					<span class="underline decoration-amber-600">Web Developer</span>
+			<div id="heroText" class="mx-3 w-min">
+				<h1 class="mb-5 font-sans leading-none text-hero md:text-nowrap">Alex Aspinall.</h1>
+				<h2 class="font-bold tracking-wider uppercase text-hero-sm font-eurostile">
+					<span class="underline decoration-4 underline-offset-8 decoration-blue-500"
+						>Full-stack</span
+					>
+					<span class="underline decoration-4 underline-offset-8 decoration-amber-600"
+						>Web Developer</span
+					>
 				</h2>
 			</div>
 			<SkillBanner />
