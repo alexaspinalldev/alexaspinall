@@ -1,11 +1,12 @@
 ---
 import Button from '../components/button.astro'
-// Props: href, onClick, variant, label, svg
+// Props are href, onClick, variant, label, svg
 
-// import LinkedIn from '../assets/icons/linkedin.astro'
+import Theme from '../components/themeToggle.astro'
 ---
 
 <div class="flex h-[5.5rem] justify-end items-center gap-3 mr-4">
+	<Theme />
 	<Button
 		id="linkedinLink"
 		href="https://www.linkedin.com/in/alexaspinalldev/"
