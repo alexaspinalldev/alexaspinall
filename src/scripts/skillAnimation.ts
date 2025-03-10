@@ -1,5 +1,5 @@
-window.addEventListener('DOMContentLoaded', () => {
-  skillAnimation();
+document.addEventListener('visibilitychange', () => {
+  !document.hidden ? skillAnimation() : null;
 });
 
 async function skillAnimation() {
