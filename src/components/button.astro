@@ -24,7 +24,7 @@ const icons: { [key: string]: string } = {
 
 {
 	href ? (
-		<a href={href} class={`${baseStyles} ${variants[variant]}`}>
+		<a href={href} class={`${baseStyles} ${variants[variant]}`} target="_blank" rel="noopener">
 			<span class={iconStyles} set:html={icons[svg]} />
 			<span class={labelStyles}>{label}</span>
 		</a>
