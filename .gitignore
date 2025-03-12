@@ -31,7 +31,6 @@ core.python*
 config.js
 __pycache__/
 *.py[cod]
-.github/
 cloudinary_python.txt
 
 # Stop changing my VSC theme please
