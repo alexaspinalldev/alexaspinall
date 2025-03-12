@@ -15,8 +15,8 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 			class="mb-[4rem] flex grow flex-wrap items-center justify-center bg-white dark:bg-black shadow-lg"
 		>
 			<div id="heroText" class="mx-3 w-min">
-				<h1 class="mb-0 leading-none text-hero md:text-nowrap">Alex Aspinall.</h1>
-				<h2 class="font-bold tracking-wider uppercase text-hero-sm font-eurostile">
+				<h1 class="mb-3 leading-none md:mb-0 text-hero md:text-nowrap">Alex Aspinall.</h1>
+				<h2 class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile">
 					<span class="underline decoration-4 underline-offset-8 decoration-blue-500"
 						>Full-stack</span
 					>
@@ -24,7 +24,7 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 						>Web Developer</span
 					>
 				</h2>
-				<h3 class="text-hero-sm">Call to action</h3>
+				<h3 class="text-hero-sm font-eurostile-regular">Call to action</h3>
 			</div>
 			<SkillBanner />
 		</div>
@@ -39,7 +39,7 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 						</div>
 					</div>
 					<div class="w-full p-1 md:w-2/3 md:pt-0 md:pl-6">
-						<h2 class="mb-2 font-bold tracking-wider uppercase text-hero-sm font-eurostile">
+						<h2 class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile">
 							<span class="underline decoration-4 underline-offset-8 decoration-blue-500"
 								>About</span
 							>
@@ -53,14 +53,24 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 				</div>
 			</div>
 		</section>
-		<section class="p-6 md:px-[7vw]">
-			<h2 class="mb-2 font-bold tracking-wider uppercase text-hero-sm font-eurostile">
+		<section class="py-6">
+			<h2
+				class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile px-6 md:px-[7vw]"
+			>
 				<span class="underline decoration-4 underline-offset-8 decoration-blue-500">My</span>
 				<span class="underline decoration-4 underline-offset-8 decoration-amber-600">Projects</span>
 			</h2>
-			<div id="clientSites">
-				<h3>Client Sites</h3>
-				<div class="flex flex-wrap justify-evenly">
+			<div class="px-6 md:px-[3vw]" id="clientSites">
+				<!-- <h3 class="mb-2 font-eurostile-regular text-hero-sm">Client Sites</h3> -->
+				<div class="flex flex-wrap justify-between md:flex-nowrap gap-7">
+					<!-- Props: livehref, githubhref, title, blurb, thumb -->
+					<ProjectCard
+						title="Dana Winestone Coaching"
+						blurb="A modern, full-featured static website built for a life coaching business. Built in Astro, boasting Netlify form integration, serverless Mailerlite API email collection, and PagesCMS-driven blog."
+						thumb="/src/assets/images/projectThumbs/dana-lbg.webp"
+						livehref="https://danawinestonecoaching.netlify.app/"
+						githubhref=""
+					/>
 					<ProjectCard />
 					<ProjectCard />
 					<ProjectCard />

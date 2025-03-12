@@ -4,7 +4,7 @@
 
 /* Fonts */
 @font-face {
-	font-family: 'Eurostile';
+	font-family: 'Eurostile-bold';
 	src: url('src/assets/fonts/EurostileMNBold.ttf') format('truetype');
 	font-weight: 700;
 	font-stretch: expanded;
@@ -19,16 +19,27 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Eurostile-regular';
+	src: url('src/assets/fonts/EurostileMNRegular.ttf') format('truetype');
+	font-weight: 400;
+	font-stretch: normal;
+	font-display: swap;
+}
+
 /* Extend theme */
 @theme {
 	/* Custom fonts */
-	--font-eurostile: Eurostile, monospace;
+	--font-eurostile: Eurostile-bold, monospace;
+	--font-eurostile-regular: Eurostile-regular, monospace;
 	--font-body: Roboto, sans-serif;
 
 	/* Hero text sizes */
 	--text-hero: clamp(6rem, 3.8873rem + 9.0141vw, 12rem);
 	--text-hero-sm: clamp(1rem, 0.7535rem + 1.0516vw, 1.7rem);
 }
+
+@custom-variant poi (&:hover, &:focus-visible);
 
 /* Global styles */
 body {
