@@ -12,9 +12,9 @@
 }
 
 @font-face {
-	font-family: 'Quicksand';
-	src: url('../assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
-	font-weight: 500;
+	font-family: 'SF-Pro-Light';
+	src: url('../assets/fonts/SF-Pro-Display-Light.otf') format('opentype');
+	font-weight: 300;
 	font-stretch: normal;
 	font-display: swap;
 }
@@ -32,7 +32,7 @@
 	/* Custom fonts */
 	--font-eurostile: Eurostile-bold, monospace;
 	--font-eurostile-regular: Eurostile-regular, monospace;
-	--font-body: Quicksand, sans-serif;
+	--font-body: SF-Pro-Light, sans-serif;
 
 	/* Hero text sizes */
 	--text-hero: clamp(6rem, 3.8873rem + 9.0141vw, 12rem);
