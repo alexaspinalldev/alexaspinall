@@ -12,9 +12,9 @@
 }
 
 @font-face {
-	font-family: 'Roboto';
-	src: url('../assets/fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
-	font-weight: 400;
+	font-family: 'Quicksand';
+	src: url('../assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+	font-weight: 500;
 	font-stretch: normal;
 	font-display: swap;
 }
@@ -32,7 +32,7 @@
 	/* Custom fonts */
 	--font-eurostile: Eurostile-bold, monospace;
 	--font-eurostile-regular: Eurostile-regular, monospace;
-	--font-body: Roboto, sans-serif;
+	--font-body: Quicksand, sans-serif;
 
 	/* Hero text sizes */
 	--text-hero: clamp(6rem, 3.8873rem + 9.0141vw, 12rem);
