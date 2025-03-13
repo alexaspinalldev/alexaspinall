@@ -36,7 +36,9 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 			<div class="bg-white dark:bg-gray-800 rounded-[50px] shadow-md">
 				<div class="flex flex-wrap p-5">
 					<div class="w-full pb-3 md:w-1/3 md:pb-0">
-						<div class="flex items-center justify-center overflow-hidden rounded-3xl aspect-square">
+						<div
+							class="flex items-center justify-center overflow-hidden rounded-3xl aspect-square"
+						>
 							<Image src={AlexBali} alt="Alex Aspinall" />
 						</div>
 					</div>
@@ -44,14 +46,18 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 						<h2
 							class="mb-3 font-bold leading-none tracking-wider uppercase text-hero-sm font-eurostile"
 						>
-							<span class="underline decoration-4 underline-offset-8 decoration-blue-500"
+							<span
+								class="underline decoration-4 underline-offset-8 decoration-blue-500"
 								>About</span
 							>
-							<span class="underline decoration-4 underline-offset-8 decoration-amber-600">Me</span>
+							<span
+								class="underline decoration-4 underline-offset-8 decoration-amber-600"
+								>Me</span
+							>
 						</h2>
 						<p>
-							Hi, I'm Alex. I'm a web developer based in London. I have experience with HTML, CSS,
-							and JavaScript, and I'm currently learning React.
+							Hi, I'm Alex. I'm a web developer based in London. I have experience
+							with HTML, CSS, and JavaScript, and I'm currently learning React.
 						</p>
 					</div>
 				</div>
@@ -61,17 +67,21 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 			<h2
 				class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile px-6 md:px-[7vw] leading-none"
 			>
-				<span class="underline decoration-4 underline-offset-8 decoration-blue-500">My</span>
-				<span class="underline decoration-4 underline-offset-8 decoration-amber-600">Projects</span>
+				<span class="underline decoration-4 underline-offset-8 decoration-blue-500">My</span
+				>
+				<span class="underline decoration-4 underline-offset-8 decoration-amber-600"
+					>Projects</span
+				>
 			</h2>
 			<div class="px-6 md:px-[3vw]" id="clientSites">
 				<!-- <h3 class="mb-2 font-eurostile-regular text-hero-sm">Client Sites</h3> -->
 				<div class="flex flex-wrap justify-between md:flex-nowrap gap-7">
 					<!-- Props: livehref, githubhref, title, blurb, thumb -->
+					<!-- Images must be added to projectTumbs.ts -->
 					<ProjectCard
 						title="Dana Winestone Coaching"
 						blurb="A modern, full-featured static website for a life coaching business. Built in Astro, boasting Netlify form integration, serverless Mailerlite API email collection, and PagesCMS-driven blog."
-						thumb="/src/assets/images/projectThumbs/dana-lbg.webp"
+						thumb="dana-lbg"
 						livehref="https://danawinestonecoaching.netlify.app/"
 						githubhref=""
 					/>
