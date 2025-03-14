@@ -15,7 +15,7 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 			class="mb-[4rem] flex flex-col grow items-center justify-center bg-white dark:bg-black shadow-lg"
 		>
 			<div id="heroText" class="flex flex-col justify-center mx-3 leading-none w-fit grow">
-				<h1 class="mb-3 text-hero">Alex Aspinall.</h1>
+				<h1 class="mb-5 text-hero">Alex Aspinall.</h1>
 				<h2
 					class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile text-nowrap"
 				>
@@ -44,7 +44,7 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 					</div>
 					<div class="w-full p-1 md:w-2/3 md:pt-0 md:pl-6">
 						<h2
-							class="mb-3 font-bold leading-none tracking-wider uppercase text-hero-sm font-eurostile"
+							class="mb-5 font-bold leading-none tracking-wider uppercase text-hero-sm font-eurostile"
 						>
 							<span
 								class="underline decoration-4 underline-offset-8 decoration-blue-500"
@@ -65,7 +65,7 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 		</section>
 		<section class="py-6">
 			<h2
-				class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile px-6 md:px-[7vw] leading-none"
+				class="mb-5 font-bold tracking-wider uppercase text-hero-sm font-eurostile px-6 md:px-[7vw] leading-none"
 			>
 				<span class="underline decoration-4 underline-offset-8 decoration-blue-500">My</span
 				>
@@ -75,19 +75,23 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 			</h2>
 			<div class="px-6 md:px-[3vw]" id="clientSites">
 				<!-- <h3 class="mb-2 font-eurostile-regular text-hero-sm">Client Sites</h3> -->
-				<div class="flex flex-wrap justify-between md:flex-nowrap gap-7">
+				<div class="flex flex-wrap justify-start overflow-scroll md:flex-nowrap gap-7">
 					<!-- Props: livehref, githubhref, title, blurb, thumb -->
 					<!-- Images must be added to projectTumbs.ts -->
 					<ProjectCard
 						title="Dana Winestone Coaching"
-						blurb="A modern, full-featured static website for a life coaching business. Built in Astro, boasting Netlify form integration, serverless Mailerlite API email collection, and PagesCMS-driven blog."
+						blurb="A modern, full-featured static website for a Life Coaching business. Built in Astro, boasting Netlify form integration, serverless Mailerlite API email collection, and PagesCMS-driven blog."
 						thumb="dana-lbg"
 						livehref="https://danawinestonecoaching.netlify.app/"
 						githubhref=""
 					/>
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
+					<ProjectCard
+						title="Terra Java"
+						blurb="Terra Java is a boutique catalogue of the world's finest coffee blends, named for the rich coffee fields found on the island of Java in western Indonesia. This was my Full Stack Capstone Project with Code Institute and uses the Django framework."
+						thumb="terra-java"
+						livehref="https://terra-java-9165cf0b75d7.herokuapp.com/"
+						githubhref="https://github.com/alexaspinalldev/Terra-Java"
+					/>
 				</div>
 			</div>
 		</section>
