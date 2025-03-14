@@ -36,7 +36,11 @@
 
 	/* Hero text sizes */
 	--text-hero: clamp(6rem, 3.8873rem + 9.0141vw, 12rem);
-	--text-hero-sm: clamp(1rem, 0.7535rem + 1.0516vw, 1.7rem);
+	--text-hero-sm: clamp(0.9rem, 0.6887rem + 0.9014vw, 1.5rem);
+
+	/* Shadow */
+	--shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 0px 8px -4px rgb(0 0 0 / 0.1);
+	--shadow-y-lg: 0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 @custom-variant poi (&:hover, &:focus-visible);
@@ -62,7 +66,7 @@ body {
 }
 
 .skillCont svg {
-	@apply drop-shadow-md grayscale transition duration-500  hover:grayscale-0 hover:scale-110 hover:drop-shadow-xl;
+	@apply grayscale transition duration-500  poi:grayscale-0 poi:scale-110 poi:drop-shadow-xl;
 	height: clamp(2.5rem, 1.2676rem + 5.2582vw, 6rem);
 }
 
