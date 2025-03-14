@@ -4,8 +4,10 @@ const { href, onClick, variant, label, svg } = Astro.props
 
 // Tailwind Styles
 const baseStyles =
-	'p-4 rounded-full transition-[width] flex items-center justify-start overflow-hidden shadow-md w-[3.5rem] poi:w-[13rem] group'
-const labelStyles = 'text-lg font-bold leading-[1.5rem] text-nowrap ml-4 hidden md:group-poi:block'
+	'p-4 rounded-full transition-[width] flex items-center justify-start overflow-hidden shadow-md w-[3.5rem] focusExpand'
+// poi:w-[12rem] group
+const labelStyles = 'text-md font-bold leading-[1.5rem] text-nowrap ml-[1.1rem] '
+// hidden md:group-poi:block
 const iconStyles = 'size-[1.5rem]'
 const variants: { [key: string]: string } = {
 	btnblue: 'bg-gradient-to-tl from-blue-500 to-blue-400 text-white fill-white',
@@ -35,3 +37,29 @@ const icons: { [key: string]: string } = {
 		</button>
 	)
 }
+
+<script>
+	const buttons = document.querySelectorAll('.focusExpand')
+
+	buttons.forEach((el) => {
+		el.addEventListener('focus', toggleWidth)
+		el.addEventListener('blur', toggleWidthOff)
+		el.addEventListener('mouseenter', toggleWidth)
+		el.addEventListener('mouseleave', toggleWidthOff)
+	})
+
+	function toggleWidth(event: Event) {
+		const el = event.currentTarget as HTMLElement
+		if (el) {
+			let maxWidth = el.scrollWidth
+			el.style.width = `${maxWidth}px`
+		}
+	}
+
+	function toggleWidthOff(event: Event) {
+		const el = event.currentTarget as HTMLElement
+		if (el) {
+			el.style.width = ''
+		}
+	}
+</script>
