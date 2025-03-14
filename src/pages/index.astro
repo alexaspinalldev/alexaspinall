@@ -9,15 +9,15 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 ---
 
 <Base title="Home">
-	<header class="flex flex-col h-dvh">
+	<header class="flex flex-col h-svh">
 		<SocialLinks />
 		<div
-			class="mb-[4rem] flex grow flex-wrap items-center justify-center bg-white dark:bg-black shadow-lg"
+			class="mb-[4rem] flex flex-col grow items-center justify-center bg-white dark:bg-black shadow-lg"
 		>
-			<div id="heroText" class="mx-3 w-min">
-				<h1 class="mb-3 leading-none md:mb-0 text-hero md:text-nowrap">Alex Aspinall.</h1>
+			<div id="heroText" class="flex flex-col justify-center mx-3 leading-none w-fit grow">
+				<h1 class="mb-3 text-hero">Alex Aspinall.</h1>
 				<h2
-					class="mb-3 font-bold leading-none tracking-wider uppercase text-hero-sm font-eurostile"
+					class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile text-nowrap"
 				>
 					<span class="underline decoration-4 underline-offset-8 decoration-blue-500"
 						>Full-stack</span
@@ -26,7 +26,7 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 						>Web Developer</span
 					>
 				</h2>
-				<h3 class="text-hero-sm font-eurostile-regular">Call to action</h3>
+				<!-- <h3 class="text-hero-sm font-eurostile-regular">Call to action</h3> -->
 			</div>
 			<SkillBanner />
 		</div>
