@@ -32,7 +32,8 @@
 	/* Custom fonts */
 	--font-eurostile: Eurostile-bold, monospace;
 	--font-eurostile-regular: Eurostile-regular, monospace;
-	--font-body: SF-Pro-Light, sans-serif;
+	--font-body: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+	/* --font-body: SF-Pro-Light, sans-serif; */
 
 	/* Hero text sizes */
 	--text-hero: clamp(6rem, 3.8873rem + 9.0141vw, 12rem);
@@ -48,7 +49,7 @@
 /* Global styles */
 body {
 	font-family: var(--font-body);
-	@apply tracking-wide;
+	@apply font-extralight;
 }
 
 .body-bg {
