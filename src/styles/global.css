@@ -83,3 +83,16 @@ body {
 .skillHover {
 	@apply grayscale-0 scale-110 drop-shadow-xl;
 }
+
+/* Form error stlyes */
+.error input, .error textarea {
+	@apply border-red-600
+}
+
+.error label {
+	@apply text-red-600
+}
+
+.error #error {
+	@apply block
+}

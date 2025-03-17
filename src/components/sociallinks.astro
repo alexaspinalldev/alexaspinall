@@ -30,7 +30,13 @@ import Theme from '../components/themeToggle.astro'
 		svg="Github"
 		aria-label="Link to my Github account (opens in a new tab)"
 	/>
-	<Button id="contactMeLink" href="" variant="btnorange" label="Let's work together" svg="Mail" />
+	<Button
+		id="contactMeLink"
+		onClick="contactModal.showModal()"
+		variant="btnorange"
+		label="Let's work together"
+		svg="Mail"
+	/>
 	<Button
 		id="fitnessCoachingLink"
 		href="/fitness/"

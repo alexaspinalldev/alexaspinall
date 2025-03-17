@@ -32,7 +32,7 @@ const icons: { [key: string]: string } = {
 			<span class={labelStyles}>{label}</span>
 		</a>
 	) : (
-		<button class={`${baseStyles} ${variants[variant]}`} onclick={onClick}>
+		<button class={`${baseStyles} ${variants[variant]} cursor-pointer`} onclick={onClick}>
 			<span class={iconStyles} set:html={icons[svg]} />
 			<span class={labelStyles}>{label}</span>
 		</button>
