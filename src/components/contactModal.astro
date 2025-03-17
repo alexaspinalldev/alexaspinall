@@ -43,15 +43,20 @@
 			>
 			<span class="hidden text-sm text-red-600" id="error">Email address is required</span>
 		</div>
+		<!-- (≖_≖ ) -->
 		<div class="opacity-0 size-0">
+			<!-- See below how to stop browsers autocompleteing your hpot -->
 			<input
 				type="email"
+				tabindex="-1"
+				autocomplete="DontEvenThinkAboutIt"
+				aria-hidden="true"
 				name="email2"
 				id="email2"
 				placeholder=" "
 				class="block w-full px-0 pt-3 pb-2 mt-0 bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-black"
 			/>
-			<label for="email" class="absolute text-gray-500 duration-300 top-3 -z-1 origin-0"
+			<label for="email2" class="absolute text-gray-500 duration-300 top-3 -z-1 origin-0"
 				>Enter email address</label
 			>
 		</div>
@@ -153,16 +158,14 @@
 		})
 	})
 
-	const errMessages = document.querySelectorAll('#error')
-	const allBorders = document.querySelectorAll('.border-gray-200')
-	const allTexts = document.querySelectorAll('.text-gray-500')
-
 	function validateForm() {
+		let hasErrors: boolean = false // Track validation failures
+
 		document.querySelectorAll('.formInput').forEach((el) => {
 			const input = el.querySelector('input')
 			const textarea = el.querySelector('textarea')
 
-			// Check if input or textarea exists and has a value. Check email regex. Check phone number.
+			// Check if input or textarea exists and has a value
 			if (
 				(input && !input.value.trim()) ||
 				(textarea && !textarea.value.trim()) ||
@@ -171,14 +174,15 @@
 					!input.value.match(/^(?:\+\d{1,4}[ -]?)?(?:\d{2,4}[ -]?)?\d{4,}$/))
 			) {
 				el.classList.add('error')
-			} else {
-				submitForm()
-				alert('Success!')
+				hasErrors = true // Mark form as invalid
 			}
 		})
-	}
 
-	// THis is not reliably blockign submission
+		// If no errors, submit form
+		if (!hasErrors) {
+			submitForm()
+		}
+	}
 
 	function submitForm() {
 		// Grab the honeypot
@@ -186,9 +190,10 @@
 		// Check the honeypot
 		if (email2?.value) {
 			// It's a bot
+			alert(`A bot filled: ${email2.value}`)
 			return
 		}
-		alert('Form submitted')
+		alert(`Sorry - I've not set up form submissions yet!`)
 		// It's a human => Send the form data to the server
 	}
 </script>
