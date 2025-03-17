@@ -8,6 +8,13 @@ import Theme from '../components/themeToggle.astro'
 <div class="flex h-[5.5rem] justify-end items-center gap-3 mr-4 sticky top-0 z-50">
 	<Theme />
 	<Button
+		id="instaLink"
+		href="https://www.instagram.com/alexaspinall/"
+		variant="btninsta"
+		label="Instagram"
+		svg="Instagram"
+	/>
+	<Button
 		id="linkedinLink"
 		href="https://www.linkedin.com/in/alexaspinalldev/"
 		variant="btnblue"
@@ -23,7 +30,7 @@ import Theme from '../components/themeToggle.astro'
 		svg="Github"
 		aria-label="Link to my Github account (opens in a new tab)"
 	/>
-	<Button id="contactMeLink" href="" variant="btnorange" label="Contact me" svg="Mail" />
+	<Button id="contactMeLink" href="" variant="btnorange" label="Let's work together" svg="Mail" />
 	<Button
 		id="fitnessCoachingLink"
 		href="/fitness/"
