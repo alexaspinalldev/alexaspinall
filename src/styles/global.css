@@ -67,6 +67,9 @@ body {
 	height: 24px;
 }
 
+.instaBg {
+	background: radial-gradient(at 17% 0%, #823fca 0px, transparent 50%), radial-gradient(at 25% 100%, #ffb81f 0px, transparent 50%), radial-gradient(at 100% 1%, #de21af 0px, transparent 50%), #ed334b;
+}
 /* Skill banner classes */
 .skillCont {
 	@apply w-min flex items-center justify-center;
