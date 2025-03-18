@@ -41,10 +41,12 @@
 			<label for="email" class="absolute text-gray-500 duration-300 top-3 -z-1 origin-0"
 				>Enter email address</label
 			>
-			<span class="hidden text-sm text-red-600" id="error">Email address is required</span>
+			<span class="hidden text-sm text-red-600" id="error"
+				>Invalid - I need a way to contact you!</span
+			>
 		</div>
 		<!-- (≖_≖ ) -->
-		<div class="opacity-0 size-0">
+		<div class="absolute opacity-0 size-0">
 			<!-- See below how to stop browsers autocompleteing your hpot -->
 			<input
 				type="email"
@@ -54,11 +56,9 @@
 				name="email2"
 				id="email2"
 				placeholder=" "
-				class="block w-full px-0 pt-3 pb-2 mt-0 bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-black"
+				class=""
 			/>
-			<label for="email2" class="absolute text-gray-500 duration-300 top-3 -z-1 origin-0"
-				>Enter email address</label
-			>
+			<label for="email2" class="absolute">Enter email address</label>
 		</div>
 		<div class="relative z-0 w-full mb-5 formInput">
 			<input
@@ -83,7 +83,9 @@
 					</g></svg
 				>Whatsapp</label
 			>
-			<span class="hidden text-sm text-red-600" id="error">Phone number is required</span>
+			<span class="hidden text-sm text-red-600" id="error"
+				>Invalid - I need a way to contact you!</span
+			>
 		</div>
 		<div class="relative z-0 w-full mb-5 formInput">
 			<textarea
@@ -148,41 +150,97 @@
 </style>
 
 <script>
-	// Grab the button
+	// Close the modal when the user clicks outside of it
+	document.addEventListener('click', (event) => {
+		const modal = document.getElementById('contactModal') as HTMLDialogElement
+		if (event.target === modal) {
+			modal.close()
+		}
+	})
+
+	// Validate the form on submit
 	document.getElementById('contactSubmit')?.addEventListener('click', validateForm)
 
-	// Reset the field when someone edits it
+	// Reset the field error when someone edits it
 	document.querySelectorAll('.formInput').forEach((el) => {
 		el.addEventListener('input', (e) => {
 			el.classList.remove('error')
+			// If they edit the phone or email fields, remove the error from both
+			if (el.querySelector('input[type="email"], input[type="tel"]')) {
+				document
+					.querySelectorAll('input[type="email"], input[type="tel"]')
+					.forEach((el) => {
+						el.closest('.formInput')?.classList.remove('error')
+					})
+			}
 		})
 	})
 
 	function validateForm() {
+		// Reset all errors
+		document.querySelectorAll('.formInput').forEach((el) => {
+			el.classList.remove('error')
+		})
+
 		let hasErrors: boolean = false // Track validation failures
+		let noEmail = false // Track if they've not provided any email details
+		let noPhone = false // Track if they've not provided any phone details
+
+		// Regex for email and phone number validation
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+		const phoneRegex = /^(?:\+\d{1,4}[ -]?)?(?:\d{2,4}[ -]?)?\d{4,}$/
 
 		document.querySelectorAll('.formInput').forEach((el) => {
 			const input = el.querySelector('input')
 			const textarea = el.querySelector('textarea')
 
-			// Check if input or textarea exists and has a value
-			if (
+			// Check if the email and phone number are valid, if present
+			if (input?.type === 'email' || input?.type === 'tel') {
+				if (input?.type === 'email') {
+					if (!input?.value.trim()) {
+						// Mark if email is not present
+						noEmail = true
+					} else if (!input.value.match(emailRegex)) {
+						el.classList.add('error')
+						hasErrors = true
+					}
+				}
+
+				if (input?.type === 'tel') {
+					if (!input?.value.trim()) {
+						// Mark if phone number is not present
+						noPhone = true
+					} else if (!input.value.match(phoneRegex)) {
+						el.classList.add('error')
+						hasErrors = true
+					}
+				}
+			} else if (
+				// Check if the other inputs have a value at all
 				(input && !input.value.trim()) ||
-				(textarea && !textarea.value.trim()) ||
-				(input?.type === 'email' && !input.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) ||
-				(input?.type === 'tel' &&
-					!input.value.match(/^(?:\+\d{1,4}[ -]?)?(?:\d{2,4}[ -]?)?\d{4,}$/))
+				(textarea && !textarea.value.trim())
 			) {
 				el.classList.add('error')
 				hasErrors = true // Mark form as invalid
 			}
 		})
 
+		// If they've not provided any contact details, show the user specific field errors
+		if (noEmail && noPhone) {
+			document.querySelectorAll('input[type="email"], input[type="tel"]').forEach((el) => {
+				el.closest('.formInput')?.classList.add('error')
+			})
+			hasErrors = true
+		}
+
 		// If no errors, submit form
 		if (!hasErrors) {
-			submitForm()
+			// Allow the form to update the DOM before submitting
+			setTimeout(() => submitForm(), 0)
 		}
 	}
+
+	function validateContact() {}
 
 	function submitForm() {
 		// Grab the honeypot
@@ -190,10 +248,11 @@
 		// Check the honeypot
 		if (email2?.value) {
 			// It's a bot
-			alert(`A bot filled: ${email2.value}`)
+			alert('Error submitting form')
 			return
 		}
 		alert(`Sorry - I've not set up form submissions yet!`)
 		// It's a human => Send the form data to the server
+		// Should be possible to do this without rerendering the form - opportunity for HTMX potentially, rather than manually replacing the button text
 	}
 </script>
