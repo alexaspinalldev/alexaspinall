@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets'
+import AABali from '../assets/images/carouselItems/aa-bali.webp'
+import AABattersea from '../assets/images/carouselItems/aa-battersea.webp'
+import AACigar from '../assets/images/carouselItems/aa-cigar.webp'
+import AAMirror from '../assets/images/carouselItems/aa-mirror.webp'
+import AANice from '../assets/images/carouselItems/aa-nice.webp'
+import AAField from '../assets/images/carouselItems/aa-outstanding-in-field.webp'
+import AARiga from '../assets/images/carouselItems/aa-riga.webp'
+import AASoutherdown from '../assets/images/carouselItems/aa-southerndown.webp'
+---
+
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+
+<div class="glide">
+	<div class="glide__track" data-glide-el="track">
+		<ul class="glide__slides">
+			<li class="glide__slide"><Image src={AABali} alt="Alex in Bali" /></li>
+			<li class="glide__slide"><Image src={AABattersea} alt="Alex in Battersea" /></li>
+			<li class="glide__slide"><Image src={AACigar} alt="Alex with a cigar" /></li>
+			<li class="glide__slide"><Image src={AAMirror} alt="Alex in a mirror" /></li>
+			<li class="glide__slide"><Image src={AANice} alt="Alex in Nice" /></li>
+			<li class="glide__slide">
+				<Image src={AAField} alt="Alex outstanding in his field" />
+			</li>
+			<li class="glide__slide"><Image src={AARiga} alt="Alex in Riga" /></li>
+			<li class="glide__slide"><Image src={AASoutherdown} alt="Alex in Southerndown" /></li>
+		</ul>
+	</div>
+</div>
+
+<script>
+	// @ts-ignore
+	import Glide, { Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
+
+	const glide = new Glide('.glide', {
+		type: 'carousel',
+		autoplay: 10000,
+		hoverpause: false, // Keep autoplay running even when hovered
+		perView: 1,
+		animationDuration: 2000,
+		gap: 20,
+		keyboard: false,
+		dragThreshold: false,
+		swipeThreshold: false,
+		touchAngle: false,
+		animationTimingFunc: 'cubic-bezier(0.686, 0, 0.433, 0.993)' // Ease in and out
+	})
+
+	glide.mount({ Autoplay }) // Mount with the Autoplay module
+</script>

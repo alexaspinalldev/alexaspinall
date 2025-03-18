@@ -4,9 +4,7 @@ import SocialLinks from '../components/sociallinks.astro'
 import SkillBanner from '../components/skillBanner.astro'
 import ProjectCard from '../components/projectCard.astro'
 import ContactModal from '../components/contactModal.astro'
-
-import { Image } from 'astro:assets'
-import AlexBali from '../assets/images/alex-aspinall-bali.webp'
+import Carousel from '../components/carousel.astro'
 ---
 
 <Base title="Home">
@@ -45,7 +43,7 @@ import AlexBali from '../assets/images/alex-aspinall-bali.webp'
 						<div
 							class="flex items-center justify-center overflow-hidden rounded-3xl aspect-square"
 						>
-							<Image src={AlexBali} alt="Alex Aspinall" />
+							<Carousel />
 						</div>
 					</div>
 					<div class="w-full p-1 md:w-2/3 md:pt-0 md:pl-6">
