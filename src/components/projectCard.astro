@@ -24,7 +24,7 @@ thumb = projectThumbs[thumb as keyof typeof projectThumbs]
 						<Image
 							src={thumb}
 							alt={`${title} thumbnail`}
-							class="object-cover aspect-3/2 rounded-t-2xl"
+							class="object-cover aspect-3/2 rounded-t-2xl hover:blur-[1px] hover:opacity-90 transition transition-duration-700"
 						/>
 					) : (
 						<div class="bg-gray-200 aspect-3/2 rounded-t-2xl" />
