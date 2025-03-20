@@ -11,9 +11,8 @@ thumb = projectThumbs[thumb as keyof typeof projectThumbs]
 	class="flex flex-col mb-2 overflow-hidden bg-white shadow-lg md:max-w-19/80 md:grow rounded-2xl dark:bg-gray-800"
 >
 	<div class="p-5 grow rounded-t-2xloverflow-hidden">
-		<div>
+		<div class="overflow-hidden rounded-t-2xl">
 			<a
-				class=""
 				href={livehref}
 				target="_blank"
 				rel="noopener"
@@ -24,7 +23,7 @@ thumb = projectThumbs[thumb as keyof typeof projectThumbs]
 						<Image
 							src={thumb}
 							alt={`${title} thumbnail`}
-							class="object-cover aspect-3/2 rounded-t-2xl hover:blur-[1px] hover:opacity-90 transition transition-duration-700"
+							class="object-cover aspect-3/2 hover:blur-[1.5px] hover:opacity-90 transition duration-1000 hover:scale-105 ease-out"
 						/>
 					) : (
 						<div class="bg-gray-200 aspect-3/2 rounded-t-2xl" />

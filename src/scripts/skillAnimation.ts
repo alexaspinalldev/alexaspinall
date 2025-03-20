@@ -18,7 +18,7 @@ async function skillAnimation() {
     await new Promise(resolve => setTimeout(resolve, 400));
 
     // Remove effect
-    svgSkill.style.filter = 'grayscale(100%)';
+    svgSkill.style.filter = '';
     svgSkill.classList.toggle('scale-110');
     svgSkill.classList.toggle('drop-shadow-xl');
   }
