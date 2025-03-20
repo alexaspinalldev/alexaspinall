@@ -29,6 +29,7 @@
 
 /* Extend theme */
 @theme {
+	--dark-mode: class;
 	/* Custom fonts */
 	--font-eurostile: Eurostile-bold, monospace;
 	--font-eurostile-regular: Eurostile-regular, monospace;
