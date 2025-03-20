@@ -14,16 +14,62 @@ import '@glidejs/glide/dist/css/glide.core.min.css'
 <div class="glide">
 	<div class="glide__track" data-glide-el="track">
 		<ul class="glide__slides">
-			<li class="glide__slide"><Image src={AABali} alt="Alex in Bali" /></li>
-			<li class="glide__slide"><Image src={AABattersea} alt="Alex in Battersea" /></li>
-			<li class="glide__slide"><Image src={AACigar} alt="Alex with a cigar" /></li>
-			<li class="glide__slide"><Image src={AAMirror} alt="Alex in a mirror" /></li>
-			<li class="glide__slide"><Image src={AANice} alt="Alex in Nice" /></li>
-			<li class="glide__slide">
-				<Image src={AAField} alt="Alex outstanding in his field" />
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AABali}
+					class="object-cover object-center w-full h-full rounded-3xl"
+					alt="Alex in Bali"
+				/>
 			</li>
-			<li class="glide__slide"><Image src={AARiga} alt="Alex in Riga" /></li>
-			<li class="glide__slide"><Image src={AASoutherdown} alt="Alex in Southerndown" /></li>
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AABattersea}
+					class="object-cover object-top w-full h-full rounded-3xl"
+					alt="Alex in Battersea"
+				/>
+			</li>
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AACigar}
+					class="object-cover object-center w-full h-full rounded-3xl"
+					alt="Alex with a cigar"
+				/>
+			</li>
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AAMirror}
+					class="object-cover object-center w-full h-full rounded-3xl"
+					alt="Alex in a mirror"
+				/>
+			</li>
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AANice}
+					class="object-cover object-center w-full h-full rounded-3xl"
+					alt="Alex in Nice"
+				/>
+			</li>
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AAField}
+					class="object-cover object-center w-full h-full rounded-3xl"
+					alt="Alex outstanding in his field"
+				/>
+			</li>
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AARiga}
+					class="object-cover object-center w-full h-full rounded-3xl"
+					alt="Alex in Riga"
+				/>
+			</li>
+			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
+				<Image
+					src={AASoutherdown}
+					class="object-cover object-center w-full h-full rounded-3xl"
+					alt="Alex in Southerndown"
+				/>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -34,8 +80,8 @@ import '@glidejs/glide/dist/css/glide.core.min.css'
 
 	const glide = new Glide('.glide', {
 		type: 'carousel',
-		autoplay: 10000,
-		hoverpause: false, // Keep autoplay running even when hovered
+		autoplay: 5000,
+		hoverpause: true,
 		perView: 1,
 		animationDuration: 2000,
 		gap: 20,
