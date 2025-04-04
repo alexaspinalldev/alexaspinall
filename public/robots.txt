@@ -1,0 +1,12 @@
+# robots.txt for https://alexaspinalldev.com
+
+User-agent: *
+
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+Disallow: /search
+
+Allow: /
+
+Sitemap: https://alexaspinalldev.com/sitemap.xml
