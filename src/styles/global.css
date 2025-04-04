@@ -13,14 +13,6 @@
 }
 
 @font-face {
-	font-family: 'SF-Pro-Light';
-	src: url('../assets/fonts/SF-Pro-Display-Light.otf') format('opentype');
-	font-weight: 300;
-	font-stretch: normal;
-	font-display: swap;
-}
-
-@font-face {
 	font-family: 'Eurostile-regular';
 	src: url('../assets/fonts/EurostileMNRegular.ttf') format('truetype');
 	font-weight: 400;
