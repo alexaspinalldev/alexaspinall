@@ -23,7 +23,7 @@ thumb = projectThumbs[thumb as keyof typeof projectThumbs]
 						<Image
 							src={thumb}
 							alt={`${title} thumbnail`}
-							class="object-cover aspect-3/2 hover:blur-[1.5px] hover:opacity-90 transition duration-1000 hover:scale-105 ease-out"
+							class="object-cover aspect-3/2 poi:blur-[1.5px] poi:opacity-90 transition duration-1000 poi:scale-105 ease-out"
 						/>
 					) : (
 						<div class="bg-gray-200 aspect-3/2 rounded-t-2xl" />
@@ -40,7 +40,7 @@ thumb = projectThumbs[thumb as keyof typeof projectThumbs]
 		{
 			livehref ? (
 				<a
-					class="flex justify-center w-full py-3 hover:text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition-colors"
+					class="flex justify-center w-full py-3 poi:text-gray-500 poi:bg-gray-200 dark:poi:bg-gray-900 dark:poi:text-gray-200 transition-colors"
 					href={livehref}
 					target="_blank"
 					rel="noopener"
@@ -71,7 +71,7 @@ thumb = projectThumbs[thumb as keyof typeof projectThumbs]
 		{
 			githubhref ? (
 				<a
-					class="flex justify-center w-full py-3 hover:text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-900 dark:hover:text-gray-200 transition-colors"
+					class="flex justify-center w-full py-3 poi:text-gray-500 poi:bg-gray-200 dark:poi:bg-gray-900 dark:poi:text-gray-200 transition-colors"
 					href={githubhref}
 					target="_blank"
 					rel="noopener noreferrer"

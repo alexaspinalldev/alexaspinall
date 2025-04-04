@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant poi (&:hover, &:focus-visible);
 
 /* Fonts */
 @font-face {
@@ -45,7 +46,6 @@
 	--shadow-y-lg: 0 -10px 15px -3px rgb(0 0 0 / 0.1), 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 -4px 6px -4px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-@custom-variant poi (&:hover, &:focus-visible);
 
 /* Global styles */
 body {
