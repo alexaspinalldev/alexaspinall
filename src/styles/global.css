@@ -14,7 +14,7 @@
 
 @font-face {
 	font-family: 'Eurostile-regular';
-	src: url('../assets/fonts/EurostileMNRegular.ttf') format('truetype');
+	src: url('/public/fonts/EurostileMNRegular.ttf') format('truetype');
 	font-weight: 400;
 	font-stretch: normal;
 	font-display: swap;
