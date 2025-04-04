@@ -37,7 +37,7 @@
 	/* --font-body: SF-Pro-Light, sans-serif; */
 
 	/* Hero text sizes */
-	--text-hero: clamp(2rem, 0.9437rem + 4.507vw, 5rem);
+	--text-hero: clamp(2rem, 0.5915rem + 6.0094vw, 6rem);
 	--text-hero-sm: clamp(0.9rem, 0.6887rem + 0.9014vw, 1.5rem);
 
 	/* Shadow */
