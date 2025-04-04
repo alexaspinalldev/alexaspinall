@@ -5,27 +5,27 @@
 
 /* Fonts */
 @font-face {
-	font-family: 'Eurostile-bold';
-	src: url('/public/fonts/EurostileMNBold.ttf') format('truetype');
-	font-weight: 700;
-	font-stretch: expanded;
-	font-display: swap;
+    font-family: 'Eurostile-regular';
+    src: url('/public/fonts/EurostileMN-Extended.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-	font-family: 'Eurostile-regular';
-	src: url('/public/fonts/EurostileMNRegular.ttf') format('truetype');
-	font-weight: 400;
-	font-stretch: normal;
-	font-display: swap;
+    font-family: 'Eurostile-bold';
+    src: url('/public/fonts/EurostileMN-ExtendedBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Extend theme */
 @theme {
 	--dark-mode: class;
 	/* Custom fonts */
-	--font-eurostile: Eurostile-bold, monospace;
-	--font-eurostile-regular: Eurostile-regular, monospace;
+	--font-eurostile: Eurostile-bold, sans-serif;
+	--font-eurostile-regular: Eurostile-regular, sans-serif;
 	--font-body: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
 	/* --font-body: SF-Pro-Light, sans-serif; */
 

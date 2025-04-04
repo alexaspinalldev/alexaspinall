@@ -1,8 +1,8 @@
 ---
-import '/src/styles/global.css'
+import Footer from '../components/footer.astro'
 
-// Props
-// Page title
+// TODO: Props:
+// const Astro.props = [Page title]
 ---
 
 <!doctype html>
@@ -18,13 +18,21 @@ import '/src/styles/global.css'
 			content="web developer, full-stack, front-end, back-end, react, node, javascript, typescript, css, html, nextjs, astro, tailwind"
 		/>
 		<meta name="description" content="Alex Aspinall - Full-stack Web Developer" />
-		<link rel="preload" href="/fonts/EurostileMNBold.ttf" as="font" crossorigin="anonymous" />
+
+		<!-- Font preloads and stylesheet -->
 		<link
 			rel="preload"
-			href="/fonts/EurostileMNRegular.ttf"
+			href="/fonts/EurostileMN-ExtendedBold.woff2"
 			as="font"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="preload"
+			href="/fonts/EurostileMN-Extended.woff2"
+			as="font"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/src/styles/global.css" />
 
 		<!-- Favicons -->
 		<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
@@ -36,6 +44,6 @@ import '/src/styles/global.css'
 	</head>
 	<body class="font-sans text-black body-bg dark:text-white">
 		<slot />
-		<!-- Footer -->
+		<Footer />
 	</body>
 </html>
