@@ -1,4 +1,4 @@
-# robots.txt for https://alexaspinalldev.com
+# robots.txt for https://alexaspinall.dev
 
 User-agent: *
 
@@ -9,4 +9,4 @@ Disallow: /search
 
 Allow: /
 
-Sitemap: https://alexaspinalldev.com/sitemap.xml
+Sitemap: https://alexaspinall.dev/sitemap.xml
