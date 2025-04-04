@@ -27,12 +27,25 @@ const icons: { [key: string]: string } = {
 
 {
 	href ? (
-		<a href={href} class={`${baseStyles} ${variants[variant]}`} target="_blank" rel="noopener">
+		<a
+			href={href}
+			class={`${baseStyles} ${variants[variant]}`}
+			target="_blank"
+			rel="noopener"
+			aria-label={label}
+			tabindex="0"
+		>
 			<span class={iconStyles} set:html={icons[svg]} />
 			<span class={labelStyles}>{label}</span>
 		</a>
 	) : (
-		<button class={`${baseStyles} ${variants[variant]} cursor-pointer`} onclick={onClick}>
+		<button
+			class={`${baseStyles} ${variants[variant]} cursor-pointer`}
+			onclick={onClick}
+			aria-label={label}
+			type="button"
+			tabindex="0"
+		>
 			<span class={iconStyles} set:html={icons[svg]} />
 			<span class={labelStyles}>{label}</span>
 		</button>
