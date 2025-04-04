@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => skillAnimation());
 
 async function skillAnimation() {
   const skills = document.querySelectorAll('.skillCont svg'); // Select all SVG elements
-  console.log("Animating skills");
 
   for (const skill of skills) {
     const svgSkill = skill as SVGSVGElement; // Cast to SVGSVGElement
