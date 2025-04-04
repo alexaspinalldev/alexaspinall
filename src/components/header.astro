@@ -6,14 +6,13 @@ import SkillBanner from '../components/skillBanner.astro'
 <header class="flex flex-col h-svh">
 	<SocialLinks />
 	<div
-		class="flex flex-col grow items-center justify-center bg-white dark:bg-black shadow-(--shadow-y-lg) floater"
+		class="flex flex-col grow items-center justify-center bg-white dark:bg-gray-950 shadow-(--shadow-y-lg) floater"
 	>
-		<div
-			id="heroText"
-			class="flex flex-col justify-center pl-6 mx-3 leading-none w-fit grow md:pl-0"
-		>
-			<h1 class="mb-6 text-hero [text-shadow:_4px_4px_4px_rgb(0_0_0_/_10%)]">
-				Alex Aspinall.
+		<div id="heroText" class="flex flex-col justify-center mx-3 leading-none w-fit grow">
+			<h1
+				class="mb-6 uppercase text-hero text-nowrap font-bold tracking-wider font-eurostile dark:text-gray-300"
+			>
+				Alex Aspinall
 			</h1>
 			<h2
 				class="mb-3 font-bold tracking-wider uppercase text-hero-sm font-eurostile text-nowrap"
@@ -30,8 +29,10 @@ import SkillBanner from '../components/skillBanner.astro'
 		<SkillBanner />
 	</div>
 	<div class="h-[4rem] flex">
-		<div class="flex flex-col items-center justify-center w-full md:hidden">
-			<span class="text-center font-eurostile">Scroll down</span>
+		<div
+			class="flex flex-col items-center justify-center w-full md:hidden text-gray-500 animate-pulse"
+		>
+			<span class="text-cente font-eurostile">Scroll</span>
 			<svg
 				viewBox="0 -4.5 20 20"
 				version="1.1"
