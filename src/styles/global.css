@@ -3,22 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant poi (&:hover, &:focus-visible);
 
-/* Fonts */
-@font-face {
-    font-family: 'Eurostile-regular';
-    src: url('/public/fonts/EurostileMN-Extended.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Eurostile-bold';
-    src: url('/public/fonts/EurostileMN-ExtendedBold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+/* Fonts in public sheet */
 
 /* Extend theme */
 @theme {
