@@ -6,7 +6,7 @@
 /* Fonts */
 @font-face {
 	font-family: 'Eurostile-bold';
-	src: url('../assets/fonts/EurostileMNBold.ttf') format('truetype');
+	src: url('/public/fonts/EurostileMNBold.ttf') format('truetype');
 	font-weight: 700;
 	font-stretch: expanded;
 	font-display: swap;
