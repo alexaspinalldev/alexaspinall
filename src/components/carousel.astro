@@ -13,11 +13,12 @@ import AAChurros from '../assets/images/carouselItems/aa-churros.webp'
 import '@glidejs/glide/dist/css/glide.core.min.css'
 ---
 
-<div class="glide">
+<div class="glide intersect:motion-preset-fade intersect-once">
 	<div class="glide__track" data-glide-el="track">
 		<ul class="glide__slides">
 			<li class="overflow-hidden glide__slide aspect-square rounded-3xl">
 				<Image
+					loading="eager"
 					src={AABali}
 					class="object-cover object-center w-full h-full rounded-3xl"
 					alt="Alex in Bali"
