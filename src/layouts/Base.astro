@@ -3,7 +3,7 @@ import '/src/styles/global.css'
 import Footer from '../components/footer.astro'
 
 // TODO: Props:
-// const Astro.props = [Page title]
+const { pageTitle, metaDescription } = Astro.props
 ---
 
 <!doctype html>
@@ -12,13 +12,14 @@ import Footer from '../components/footer.astro'
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Alex Aspinall</title>
+		<title>{pageTitle}</title>
 		<meta name="author" content="Alex Aspinall" />
 		<meta
 			name="keywords"
 			content="web developer, full-stack, front-end, back-end, react, node, javascript, typescript, css, html, nextjs, astro, tailwind"
 		/>
-		<meta name="description" content="Alex Aspinall - Full-stack Web Developer" />
+		<meta name="description" content={metaDescription} />
+		<link rel="canonical" href="https://alexaspinall.dev" />
 
 		<!-- Font preloads and stylesheet -->
 		<link
