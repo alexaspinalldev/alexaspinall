@@ -1,4 +1,7 @@
 @import 'tailwindcss';
+@plugin "tailwindcss-motion";
+@plugin "tailwindcss-intersect";
+
 
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant poi (&:hover, &:focus-visible);

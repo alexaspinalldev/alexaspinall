@@ -9,7 +9,7 @@ import Carousel from '../components/carousel.astro'
 <Base title="Home">
 	<Header />
 	<main>
-		<section class="p-6 pt-0 md:px-[7vw] floater">
+		<section class="p-6 pt-0 md:px-[7vw]">
 			<div class="bg-white dark:bg-gray-800 rounded-[50px] shadow-md">
 				<div class="flex flex-wrap p-5">
 					<div class="w-full pb-3 md:w-1/3 md:pb-0">
@@ -32,7 +32,9 @@ import Carousel from '../components/carousel.astro'
 								>Me</span
 							>
 						</h2>
-						<p class="mb-3">
+						<p
+							class="mb-3 intersect-once intersect:motion-preset-slide-up motion-delay-200"
+						>
 							Hi, I'm Alex. I'm a Full-stack Web Developer with a background in Agile
 							Business Analysis, and before that Helpdesk management. I'm motivated by
 							a firm belief that code, systems and processes should be lightweight,
@@ -40,7 +42,9 @@ import Carousel from '../components/carousel.astro'
 							logical automation are fundamental elements of how technology should
 							serve humanity, be it in an app or in an internal knowledgebase.
 						</p>
-						<p class="mb-3">
+						<p
+							class="mb-3 intersect-once intersect:motion-preset-slide-up motion-delay-400"
+						>
 							Through my background in business analysis, volunteering and education,
 							I've been able to develop an easy rapport with people across a range of
 							channels, and take pride in making interactions with colleagues and
@@ -48,7 +52,9 @@ import Carousel from '../components/carousel.astro'
 							and environments, and am in my element evaluating different factors and
 							creating effective, actionable and tangible solutions.
 						</p>
-						<p class="mb-3">
+						<p
+							class="mb-3 intersect-once intersect:motion-preset-slide-up motion-delay-600"
+						>
 							Outside of work I'm obsessed with the gym, I'm a (expert) trombonist and
 							(terrible) Bachata dancer. I'm also a huge proponent of working remote,
 							with previous contracts all over the world.
@@ -57,7 +63,7 @@ import Carousel from '../components/carousel.astro'
 				</div>
 			</div>
 		</section>
-		<section class="py-6 floater">
+		<section class="py-6">
 			<h2
 				class="mb-5 font-bold tracking-wider uppercase text-hero-sm font-eurostile px-6 md:px-[7vw] leading-none"
 			>
@@ -67,7 +73,10 @@ import Carousel from '../components/carousel.astro'
 					>Projects</span
 				>
 			</h2>
-			<div class="px-6 md:px-[3vw]" id="clientSites">
+			<div
+				class="px-6 md:px-[3vw] intersect-once intersect:motion-preset-slide-up motion-delay-200"
+				id="clientSites"
+			>
 				<!-- <h3 class="mb-2 font-eurostile-regular text-hero-sm">Client Sites</h3> -->
 				<div class="flex flex-wrap justify-start overflow-scroll md:flex-nowrap gap-7">
 					<!-- Props: livehref, githubhref, title, blurb, thumb -->
