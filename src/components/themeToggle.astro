@@ -9,6 +9,8 @@
 >
 	<svg
 		class="w-full h-full fill-black dark:fill-white"
+		focusable="false"
+		aria-hidden="true"
 		id="svg"
 		version="1.1"
 		viewBox="0 0 300 299.9339960530828"
@@ -38,36 +40,37 @@
 
 <script>
 	const toggle = document.getElementById('themeToggleBtn')
-	toggle?.addEventListener('click', toggleTheme)
+	toggle!.addEventListener('click', toggleTheme)
 	const html = document.querySelector('html')
-	let isDarkmode = false
 
-	const darkIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-</svg>`
-
-	const lightIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-</svg>`
+	const userPrefersDark =
+		window.matchMedia('(prefers-color-scheme: dark)').matches ||
+		localStorage.getItem('isDarkmode') === 'true'
+	let isDarkmode: boolean
+	if (userPrefersDark) {
+		isDarkmode = true
+	} else {
+		isDarkmode = false
+	}
 
 	function toggleTheme() {
 		isDarkmode = !isDarkmode
 		localStorage.setItem('isDarkmode', isDarkmode.toString())
-		switchTheme()
+		setTheme()
 	}
 
-	function switchTheme() {
+	function setTheme() {
 		if (!toggle) return
 		if (isDarkmode) {
-			html?.classList.add('dark')
+			html!.classList.add('dark')
 			toggle.classList.remove('-rotate-45')
 			toggle.classList.add('rotate-45')
 		} else {
-			html?.classList.remove('dark')
+			html!.classList.remove('dark')
 			toggle.classList.add('-rotate-45')
 			toggle.classList.remove('rotate-45')
 		}
 	}
 
-	switchTheme()
+	setTheme()
 </script>
